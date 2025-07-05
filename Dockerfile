@@ -1,10 +1,12 @@
 FROM node:latest
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package*.json ./
 
 RUN npm install
+
+ENV HOST=0.0.0.0
 
 COPY . .
 
