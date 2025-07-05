@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package*.jon ./
 
-RUN npm insall
+RUN npm install
 
 COPY . .
 
